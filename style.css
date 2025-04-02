@@ -1,0 +1,163 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    text-align: center;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header__nav--primary{
+    background-color: #333;
+}
+
+.header__nav-item img {
+    width: 30px;
+    height: auto;
+}
+
+.header__title-heading {
+    font-size: 2em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.header__title-subheading {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.main {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.main__banner {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.main__banner--background {
+    background-image: url('./img/backgroundjpg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.main__banner-text {
+    height: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.main__article {
+    padding: 20px;
+}
+
+.main__article h4 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.main__article h5 {
+    font-size: 0.8em;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.main__article img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.main__article p {
+    line-height: 1.6;
+    color: #555;
+}
+
+@media (min-width: 768px) {
+    .main {
+        width: 60%;
+        max-width: 800px;
+    }
+  
+    .main__banner {
+        height: 400px;
+    }
+  
+    .main__banner-text {
+        font-size: 3em;
+        width: 100%;
+        text-align: center;
+    }
+  
+    .main__article {
+        padding: 30px;
+    }
+  
+    .main__article h4 {
+        font-size: 1.8em;
+    }
+  
+    .main__article h5 {
+        font-size: 1em;
+    }
+  
+    .main__article p {
+        font-size: 1.1em;
+        line-height: 1.8;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .main {
+        width: 100%;
+        max-width: none;
+    }
+  
+    .main__banner {
+        height: 350px;
+    }
+  
+    .main__banner-text {
+        font-size: 3.8em;
+        height: 6em;
+    }
+  
+    .main__article {
+        padding: 25px;
+    }
+  
+    .main__article h4 {
+        font-size: 1.6em;
+    }
+  
+    .main__article h5 {
+        font-size: 0.9em;
+    }
+  
+    .main__article p {
+        font-size: 1em;
+        line-height: 1.7;
+    }
+}
