@@ -17,7 +17,7 @@ header, footer {
 
 header .container {
     display: flex;
-    justify-content: space-between; /* Usar space-between */
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -73,7 +73,7 @@ button {
     main .container,
     footer .container {
         width: 100%;
-        padding: 0 10px; /* Ajustar padding */
+        padding: 0 10px;
         align-items: center;
     }
 
