@@ -1,0 +1,105 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header, footer {
+    background-color: #f0f0f0;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between; /* Usar space-between */
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.main-content {
+    flex: 2;
+    padding-right: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.download-box {
+    background-color: #eee;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* movil pequeño */
+@media (max-width: 480px) {
+    header .container,
+    main .container,
+    footer .container {
+        width: 100%;
+        padding: 0 10px; /* Ajustar padding */
+        align-items: center;
+    }
+
+    header .container, 
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .main-content,
+    .sidebar {
+        padding: 10px;
+    }
+
+    h2, h3 {
+        font-size: 1.2em;
+    }
+}
+
+/* Media Queries para Column Drop */
+@media (max-width: 800px) {
+    .main-content, .sidebar {
+        flex: 100%;
+    }
+}
